@@ -24,6 +24,9 @@ public class Inventory {
     @Column(columnDefinition = "json")
     private Item item;
 
+    @Column(name="quantity", columnDefinition="bigint default '0'")
+    private Long quantity;
+
 }
 @Getter
 @Setter
